@@ -21,12 +21,12 @@ function createDiv() {
     const header = document.getElementsByClassName('header')[0];
 
     //criar o elemento menu no header
-    const menuItem = document.createElement('div');
-    menuItem.className = 'menuSection'
-    menuItem.textContent = 'Ho8me';
+    const menuItemHome = document.createElement('div');
+    menuItemHome.className = 'menuSectionHome'
+    menuItemHome.textContent = 'Home';
 
     //adicionar o elemento menu no header
-    header.appendChild(menuItem);
+    header.appendChild(menuItemHome);
     
 
 
@@ -52,7 +52,9 @@ function createDiv() {
     const infoAvatar = document.createElement('p'); 
 
     //escrever o paragrafo
-    infoAvatar.textContent = 'oiii';
+    infoAvatar.textContent = 'Ariane Crestani  ';
+    
+   
 
     //adicionar o elemento paragrafo na div
     contact.appendChild(infoAvatar);
@@ -60,8 +62,8 @@ function createDiv() {
 
       //criar o elemento menu no header
     const menuItemContact = document.createElement('div');
-    menuItemContact.className = 'menuSection'
-    menuItemContact.textContent = 'Contact';
+    menuItemContact.className = 'menuSectionContact'
+    menuItemContact.textContent = 'contact';
 
     //adicionar o elemento menu no header
     header.appendChild(menuItemContact);
@@ -74,10 +76,55 @@ function createDiv() {
 
     container.appendChild(project);
 
+     //criar o elemento menu no header
+    const menuProject = document.createElement('div');
+    menuProject.className = 'menuSectionProject'
+    menuProject.textContent = 'project';
+
+
+    //adicionar o elemento menu no header
+    header.appendChild(menuProject);
+
+    //criar o paragrafo
+
+    const titleProject = document.createElement('p');
+
+
+    //escrever o paragrafo
+    titleProject.textContent = 'Project';
+    titleProject.className = 'projectTitle'
+
+    //adicionar o elemento paragrafo na div
+
+    project.appendChild(titleProject);
+
+    //criar o elemento do link
     
+    const linkBlog =  document.createElement('a');
+    
+    //colar o link de redirecionamento
+
+    linkBlog.href = 'file:///Users/arianecrestani/Documents/GitHub/travel-blog/index.html'
+    linkBlog.textContent = 'Travel-Blog';
+    linkBlog.className = 'linkBlog';
+    //adicionar o elemento link na div
+
+    project.appendChild(linkBlog);
+
+  //---------footer--------
+
+
+  const footer = document.createElement('div');
+  footer.className = 'footer';
+
+  container.appendChild(footer);
+  
+
+
+
+
 
 
 }
 
 createDiv()
-
