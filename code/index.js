@@ -13,7 +13,9 @@ function createDiv() {
     const homeImg = document.createElement('img');
 
     // configurar a imagem
-    homeImg.src = "images/main1.jpg";
+    homeImg.src = "images/main3.jpg";
+   
+
     // adicionar o elemento imagem na div
 
     imgDiv.appendChild(homeImg);
@@ -27,7 +29,11 @@ function createDiv() {
 
     //adicionar o elemento menu no header
     header.appendChild(menuItemHome);
-    
+    const titleImage =document.createElement('h1');
+    titleImage.textContent= 'Ariane Crestani'
+    titleImage.className = 'titleImage'
+
+    imgDiv.appendChild(titleImage);
 
 
 
@@ -36,7 +42,7 @@ function createDiv() {
      //criar elemento titulo 
     const titleAbout = document.createElement('h2');
     titleAbout.textContent = 'About me'
-    titleAbout.className = 'titleSection1'
+    titleAbout.className = 'title'
     //add no section about
     container.appendChild(titleAbout);
     const sectionAbout = document.createElement('div');
@@ -82,7 +88,7 @@ function createDiv() {
     const titleProject = document.createElement('h3');
     //escrever o paragrafo
     titleProject.textContent = 'Project';
-    titleProject.className = 'titleSection3'
+    titleProject.className = 'title'
 
     //adicionar o elemento paragrafo na div
 
@@ -127,7 +133,7 @@ function createDiv() {
 
     const titleContact = document.createElement('h2');
     titleContact.textContent = 'Contact';
-    titleContact.className = 'titleSection2';
+    titleContact.className = 'title';
     //add no section about
     container.appendChild(titleContact);
 
