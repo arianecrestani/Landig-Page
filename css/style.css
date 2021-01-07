@@ -36,23 +36,41 @@ img {
   display: flex;
   flex-flow: row-reverse;
   gap: 30px;
-  width: 100%;
   height: auto;
   align-items: center;
-  background-color: rosybrown;
-  border-top: black;
-  padding-top: 1p;
+  background-color: white;
+  box-shadow: rgb(156 148 148) 4px 3px 14px 0px;
+  border-radius: 0.5rem;
+  width: 90%;
+  max-width: 1400px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 .divLandingSection3 {
-  background-color: lightgray;
+  background-color: #e8e8e8;
   padding: 50px;
 }
+.titleSection1 {
+  font-size: 40px;
+  text-align: left;
+  color: black;
+  font-family: fantasy;
+}
 
-.projectTitle {
-  font-size: 50px;
-  text-align: center;
-  color: rosybrown;
-  font-family: monospace;
+.titleSection2 {
+  font-size: 40px;
+  text-align: left;
+  color: black;
+  font-family: fantasy;
+}
+.titleSection3 {
+  font-size: 40px;
+  text-align: left;
+  color: black;
+  font-family: fantasy;
 }
 .linkBlog {
   padding: 30px;
@@ -67,4 +85,7 @@ img {
 .footer {
   background-color: rosybrown;
   padding: 20px;
+}
+a:hover {
+  background-color: white;
 }
