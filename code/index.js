@@ -20,22 +20,18 @@ function createDiv() {
 
     imgDiv.appendChild(homeImg);
 
-    const header = document.getElementsByClassName('header')[0];
-
-    //criar o elemento menu no header
-    const menuItemHome = document.createElement('div');
-    menuItemHome.className = 'menuSectionHome'
-    menuItemHome.textContent = 'Home';
-
-    //adicionar o elemento menu no header
-    header.appendChild(menuItemHome);
     const titleImage =document.createElement('h1');
     titleImage.textContent= 'Ariane Crestani'
     titleImage.className = 'titleImage'
 
     imgDiv.appendChild(titleImage);
 
+    const header = document.getElementsByClassName('header')[0];
 
+    //criar o elemento menu no header
+    const menuItemHome = document.createElement('div');
+    menuItemHome.className = 'menuSectionHome'
+    menuItemHome.textContent = 'Home';
 
 
     // ------ about me
@@ -59,33 +55,44 @@ function createDiv() {
     //addcionar o elemento imagem na div
     sectionAbout.appendChild(avatarImg);
     
+    ////texto dentro da section 2
+    const textContainer = document.createElement('div');
+    textContainer.className = 'textoDivSection2';
 
-    //adicionar o element titulo mn 
+    sectionAbout.appendChild(textContainer);
+
+
+
+    const mainTitleAboutMe = document.createElement('h2');
+    mainTitleAboutMe.textContent = 'I am Ariane!';
+    mainTitleAboutMe.className = 'textAboutMe';
+
+    textContainer.appendChild(mainTitleAboutMe);
+
     //criar elemento paragrafo
     const infoAvatar = document.createElement('p'); 
-
     //escrever o paragrafo
-    infoAvatar.textContent = "Ariane Crestani  \r\n <br>oii ";
-
+    infoAvatar.textContent = "I am still learning Front End and this is my portfolio with my first project";
+    infoAvatar.className = 'textAboutMe';
    
 
     //adicionar o elemento paragrafo na div
-    sectionAbout.appendChild(infoAvatar);
+    textContainer.appendChild(infoAvatar);
 
 
       //criar o elemento about me no header
-    const aboutMe = document.createElement('div');
-    aboutMe.className = 'menuSectionAboutMe'
-    aboutMe.textContent = 'About Me';
+    const aboutMeHeader = document.createElement('div');
+    aboutMeHeader.className = 'menuSectionAboutMe'
+    aboutMeHeader.textContent = 'About Me';
 
     //adicionar o elemento menu no header
-    header.appendChild(aboutMe);
+    header.appendChild(aboutMeHeader);
 
 
 
 
     ////---------project
-    const titleProject = document.createElement('h3');
+    const titleProject = document.createElement('h2');
     //escrever o paragrafo
     titleProject.textContent = 'Project';
     titleProject.className = 'title'
@@ -123,21 +130,64 @@ function createDiv() {
 
     project.appendChild(linkBlog);
 
+
 ///////-----contato
 
     //criar o elemento contact no header
-    const contact = document.createElement('div');
-    contact.className = 'menuSectionContact'
-    contact.textContent = 'Contact';
-    header.appendChild(contact);
+    const contactMenu = document.createElement('div');
+    contactMenu.className = 'menuSectionContact'
+    contactMenu.textContent = 'Contact';
+    header.appendChild(contactMenu);
 
     const titleContact = document.createElement('h2');
     titleContact.textContent = 'Contact';
     titleContact.className = 'title';
-    //add no section about
+ 
     container.appendChild(titleContact);
 
 
+    const contactSection= document.createElement('div');
+    contactSection.className = 'divLandingSection4'
+ 
+    container.appendChild(contactSection);
+
+    const linkEmail =  document.createElement('a');
+    linkEmail.href = 'mailto:ariane.crestani@gmail.com'
+    linkEmail.className = 'linkMidiasEmail';
+
+    contactSection.appendChild(linkEmail);
+
+    const midiaEmailImg =  document.createElement('img');
+    midiaEmailImg.src = 'images/email.jpg';
+    midiaEmailImg.className = 'midias';
+    
+    linkEmail.appendChild(midiaEmailImg);
+    //--------linkdin
+
+    const linkLinkdin =  document.createElement('a');
+    linkLinkdin.href = 'https://www.linkedin.com/in/ariane-crestani-14910ba4/';
+    linkLinkdin.className = 'linkMidiaLinkdin';
+
+    contactSection.appendChild(linkLinkdin);
+
+
+    const imgLinkdin = document.createElement('img');
+    imgLinkdin.src = 'images/linkdin.jpg'
+    imgLinkdin.className = 'midias';
+
+    linkLinkdin.appendChild(imgLinkdin);
+
+
+    const linkGithub =  document.createElement('a');
+    linkGithub.href = 'https://github.com/arianecrestani'
+
+    contactSection.appendChild(linkGithub);
+
+    const imgGithub = document.createElement('img');
+    imgGithub.src = 'images/github.jpg'
+    imgGithub.className = 'midias';
+
+    linkGithub.appendChild(imgGithub);
 
 
   //---------footer--------
