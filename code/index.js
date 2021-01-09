@@ -1,31 +1,19 @@
 
-
-
 function createDiv() {
+function createHomeSection() {
     const imgDiv = document.createElement('div');
     imgDiv.className = 'divLandingSection1';
-
-//----------home
-    // buscar o container no html
+    
     const container = document.getElementsByClassName('container')[0];
-    // inserir a imgDiv no container
     container.appendChild(imgDiv);
 
-    // criar o elemento imagem
     const homeImg = document.createElement('img');
-
-    // configurar a imagem
     homeImg.src = "images/main3.jpg";
-   
-
-    // adicionar o elemento imagem na div
-
     imgDiv.appendChild(homeImg);
 
     const titleImage = document.createElement('h1');
     titleImage.textContent= 'Ariane Crestani'
     titleImage.className = 'titleMeName'
-
     imgDiv.appendChild(titleImage);
     
     const subTitleImg = document.createElement ('h2');
@@ -33,15 +21,22 @@ function createDiv() {
     subTitleImg.className = 'titlePortfolio'
     imgDiv.appendChild(subTitleImg);
 
-
-
     const header = document.getElementsByClassName('header')[0];
 
-    //criar o elemento menu no header
     const menuItemHome = document.createElement('div');
     menuItemHome.className = 'menuSectionHome'
     menuItemHome.textContent = 'Home';
 
+    header.appendChild(menuItemHome);
+}
+
+
+function createSection() {
+    const container = document.getElementsByClassName('container')[0];
+
+    const header = document.getElementsByClassName('header')[0];
+    
+    createHomeSection();
 
     // ------ about me
      //criar elemento titulo 
@@ -224,5 +219,5 @@ function createDiv() {
 
 }
 
-createDiv()
+createSection()
 
