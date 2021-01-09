@@ -1,5 +1,4 @@
 
-function createDiv() {
 function createHomeSection() {
     const imgDiv = document.createElement('div');
     imgDiv.className = 'divLandingSection1';
