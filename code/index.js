@@ -29,98 +29,65 @@ function createHomeSection() {
     header.appendChild(menuItemHome);
 }
 
+function createAboutMeSection() {
+    
+    const header = document.getElementsByClassName('header')[0];
 
-function createSection() {
     const container = document.getElementsByClassName('container')[0];
 
-    const header = document.getElementsByClassName('header')[0];
-    
-    createHomeSection();
-
-    // ------ about me
-     //criar elemento titulo 
     const titleAbout = document.createElement('h2');
     titleAbout.textContent = 'About me'
     titleAbout.className = 'title'
-    //add no section about
     container.appendChild(titleAbout);
+
     const sectionAbout = document.createElement('div');
     sectionAbout.className = 'divLandingSection2';
-
     container.appendChild(sectionAbout);
 
-    //criar o elemento imagem avatar
     const avatarImg = document.createElement('img');
-
-    //configurar a imagem avatar
     avatarImg.src ="images/fotoperfil.jpg";
-
-    //addcionar o elemento imagem na div
     sectionAbout.appendChild(avatarImg);
     
-    ////texto dentro da section 2
     const textContainer = document.createElement('div');
     textContainer.className = 'textoDivSection2';
-
     sectionAbout.appendChild(textContainer);
-
-
 
     const mainTitleAboutMe = document.createElement('h2');
     mainTitleAboutMe.textContent = 'I am Ariane!';
     mainTitleAboutMe.className = 'textAboutMe';
-
     textContainer.appendChild(mainTitleAboutMe);
 
-    //criar elemento paragrafo
     const infoAvatar = document.createElement('p'); 
-    //escrever o paragrafo
     infoAvatar.textContent = "I am still learning Front End and this is my portfolio with my first project web page travel-Blog";
     infoAvatar.className = 'textAboutMe';
-   
-
-    //adicionar o elemento paragrafo na div
     textContainer.appendChild(infoAvatar);
 
-
-      //criar o elemento about me no header
     const aboutMeHeader = document.createElement('div');
     aboutMeHeader.className = 'menuSectionAboutMe'
     aboutMeHeader.textContent = 'About Me';
-
-    //adicionar o elemento menu no header
     header.appendChild(aboutMeHeader);
+}
 
+function createProjectSection() {
+    const header = document.getElementsByClassName('header')[0];
 
-
-
-    ////---------project
+    const container = document.getElementsByClassName('container')[0];
+    
     const titleProject = document.createElement('h2');
-    //escrever o paragrafo
     titleProject.textContent = 'Project';
     titleProject.className = 'title'
-
-    //adicionar o elemento paragrafo na div
-
     container.appendChild(titleProject);
 
     const project = document.createElement('div');
     project.className = 'divLandingSection3';
-
     container.appendChild(project);
 
-     //criar o elemento menu no header
     const menuProject = document.createElement('div');
     menuProject.className = 'menuSectionProject'
     menuProject.textContent = 'project';
 
-
-    //adicionar o elemento menu no header
     header.appendChild(menuProject);
 
-
-
-    //criar o elemento do link
     const blogSection = document.createElement('div');
     blogSection.className = 'blogSection';
     project.appendChild(blogSection);
@@ -129,18 +96,27 @@ function createSection() {
     linkBlog.href = 'https://arianecrestani.github.io/travel-blog/blog-post.html'
     linkBlog.textContent = 'Travel-Blog';
     linkBlog.className = 'linkBlog';
-    //adicionar o elemento link na div
-
+    
     blogSection.appendChild(linkBlog);
 
     const imgBlog = document.createElement('img');
     imgBlog.src = 'images/logo.jpg';
     imgBlog.className = 'imgBlog';
-    
 
     linkBlog.appendChild(imgBlog)
 
 
+}
+
+function createSection() {
+    const container = document.getElementsByClassName('container')[0];
+
+    const header = document.getElementsByClassName('header')[0];
+    
+    createHomeSection();
+    createAboutMeSection();
+    createProjectSection();
+    
 
 
 ///////-----contato
