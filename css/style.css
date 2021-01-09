@@ -23,7 +23,8 @@ img {
   color: beige;
   font-size: 25px;
   text-transform: uppercase;
-  padding: 2rem;
+  padding: 1rem;
+  padding-left: 30px;
 }
 
 .divLandingSection2 > img {
@@ -32,12 +33,26 @@ img {
   height: 200px;
   padding: 170px;
 }
-.titleImage {
+.titleMeName {
   display: flex;
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
   padding: 0.5rem 0px;
+  position: absolute;
+  top: 30%;
+  z-index: 100;
+  text-align: center;
+  width: 100%;
+  font-family: fantasy;
+  font-size: 110px;
+}
+.titlePortfolio {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 10rem 0px;
   position: absolute;
   top: 30%;
   z-index: 100;
@@ -73,7 +88,7 @@ img {
   text-align: left;
   color: black;
   font-family: fantasy;
-  padding: 2rem;
+  padding-left: 5rem;
 }
 
 .linkBlog {
@@ -98,14 +113,17 @@ a:hover {
   flex-flow: wrap;
   gap: 30px;
   justify-content: center;
+  padding: 30px;
 }
 .midias {
   width: 50px;
+  padding-top: 20px;
 }
-.midias:hover {
+/* .midias:hover {
   color: rosybrown;
-  filter: drop-shadow(4px 5px 7px rosybrown);
-}
+  filter: drop-shadow(2px 4px 6px rosybrown);
+} */
 .textAboutMe {
   font-size: 20px;
+  padding-left: 5rem;
 }

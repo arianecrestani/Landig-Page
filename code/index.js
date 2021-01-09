@@ -21,10 +21,18 @@ function createDiv() {
     imgDiv.appendChild(homeImg);
 
     const titleImage =document.createElement('h1');
+    const titleImage = document.createElement('h1');
     titleImage.textContent= 'Ariane Crestani'
-    titleImage.className = 'titleImage'
+    titleImage.className = 'titleMeName'
 
     imgDiv.appendChild(titleImage);
+    
+    const subTitleImg = document.createElement ('h2');
+    subTitleImg.textContent = 'Portfolio'
+    subTitleImg.className = 'titlePortfolio'
+    imgDiv.appendChild(subTitleImg);
+
+
 
     const header = document.getElementsByClassName('header')[0];
 
@@ -72,7 +80,7 @@ function createDiv() {
     //criar elemento paragrafo
     const infoAvatar = document.createElement('p'); 
     //escrever o paragrafo
-    infoAvatar.textContent = "I am still learning Front End and this is my portfolio with my first project";
+    infoAvatar.textContent = "I am still learning Front End and this is my portfolio with my first project web page travel-Blog";
     infoAvatar.className = 'textAboutMe';
    
 
