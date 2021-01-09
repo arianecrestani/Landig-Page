@@ -107,21 +107,11 @@ function createProjectSection() {
 
 
 }
-
-function createSection() {
+function createContatoSection() {
+    const header = document.getElementsByClassName('header')[0];
     const container = document.getElementsByClassName('container')[0];
 
-    const header = document.getElementsByClassName('header')[0];
-    
-    createHomeSection();
-    createAboutMeSection();
-    createProjectSection();
-    
 
-
-///////-----contato
-
-    //criar o elemento contact no header
     const contactMenu = document.createElement('div');
     contactMenu.className = 'menuSectionContact'
     contactMenu.textContent = 'Contact';
@@ -150,8 +140,7 @@ function createSection() {
     midiaEmailImg.className = 'midias';
     
     linkEmail.appendChild(midiaEmailImg);
-    //--------linkdin
-
+    
     const linkLinkdin =  document.createElement('a');
     linkLinkdin.href = 'https://www.linkedin.com/in/ariane-crestani-14910ba4/';
     linkLinkdin.className = 'linkMidiaLinkdin';
@@ -177,20 +166,27 @@ function createSection() {
 
     linkGithub.appendChild(imgGithub);
 
+}
+function createFooter(){
 
-  //---------footer--------
+    const container = document.getElementsByClassName('container')[0];
 
+    const footer = document.createElement('div');
+    footer.className = 'footer';
 
-  const footer = document.createElement('div');
-  footer.className = 'footer';
+    container.appendChild(footer);
+}
 
-  container.appendChild(footer);
-  
+function createSection() {
+    const container = document.getElementsByClassName('container')[0];
 
-
-
-
-
+    const header = document.getElementsByClassName('header')[0];
+    
+    createHomeSection();
+    createAboutMeSection();
+    createProjectSection();
+    createContatoSection();
+    createFooter();
 
 }
 
