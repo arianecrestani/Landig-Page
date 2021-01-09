@@ -1,4 +1,6 @@
 
+
+
 function createDiv() {
     const imgDiv = document.createElement('div');
     imgDiv.className = 'divLandingSection1';
@@ -20,7 +22,6 @@ function createDiv() {
 
     imgDiv.appendChild(homeImg);
 
-    const titleImage =document.createElement('h1');
     const titleImage = document.createElement('h1');
     titleImage.textContent= 'Ariane Crestani'
     titleImage.className = 'titleMeName'
@@ -126,17 +127,26 @@ function createDiv() {
 
 
     //criar o elemento do link
-    
-    const linkBlog =  document.createElement('a');
-    
-    //colar o link de redirecionamento
+    const blogSection = document.createElement('div');
+    blogSection.className = 'blogSection';
+    project.appendChild(blogSection);
 
+    const linkBlog =  document.createElement('a');
     linkBlog.href = 'https://arianecrestani.github.io/travel-blog/blog-post.html'
     linkBlog.textContent = 'Travel-Blog';
     linkBlog.className = 'linkBlog';
     //adicionar o elemento link na div
 
-    project.appendChild(linkBlog);
+    blogSection.appendChild(linkBlog);
+
+    const imgBlog = document.createElement('img');
+    imgBlog.src = 'images/logo.jpg';
+    imgBlog.className = 'imgBlog';
+    
+
+    linkBlog.appendChild(imgBlog)
+
+
 
 
 ///////-----contato
@@ -215,3 +225,4 @@ function createDiv() {
 }
 
 createDiv()
+

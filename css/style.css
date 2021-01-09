@@ -80,7 +80,6 @@ img {
   position: relative;
 }
 .divLandingSection3 {
-  background-color: #e8e8e8;
   padding: 50px;
 }
 .title {
@@ -90,7 +89,9 @@ img {
   font-family: fantasy;
   padding-left: 5rem;
 }
-
+.blogSection {
+  display: flex;
+}
 .linkBlog {
   padding: 30px;
   text-decoration: none;
@@ -98,31 +99,33 @@ img {
   color: darkgray;
   border: 2px solid black;
   margin: auto;
-  display: table;
+  display: inline-flex;
   border-radius: 10px;
+}
+.imgBlog {
+  width: 150px;
 }
 .footer {
   background-color: rosybrown;
   padding: 20px;
 }
-a:hover {
-  background-color: rosybrown;
+.linkBlog:hover {
+  filter: drop-shadow(0.9px 0.9px black);
 }
 .divLandingSection4 {
   display: flex;
   flex-flow: wrap;
   gap: 30px;
   justify-content: center;
-  padding: 30px;
+  padding: 50px;
 }
 .midias {
   width: 50px;
   padding-top: 20px;
 }
-/* .midias:hover {
-  color: rosybrown;
-  filter: drop-shadow(2px 4px 6px rosybrown);
-} */
+.midias:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
 .textAboutMe {
   font-size: 20px;
   padding-left: 5rem;
