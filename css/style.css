@@ -33,6 +33,7 @@ img {
   height: 200px;
   padding: 170px;
 }
+
 .titleMeName {
   display: flex;
   flex-direction: column;
