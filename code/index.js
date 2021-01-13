@@ -54,7 +54,7 @@ function createHomeSection() {
 
     const homeImg = document.createElement('img');
     homeImg.src = "images/main3.jpg";
-    homeImg.className = 'imgHome'
+    homeImg.id ='imgHome'
     sectionHome.appendChild(homeImg);
 
     const homeTitle = document.createElement('div');
@@ -87,10 +87,6 @@ function createAboutMeSection() {
     sectionAbout.className = 'divLandingSection2';
     container.appendChild(sectionAbout);
 
-    const avatarImg = document.createElement('img');
-    avatarImg.src ="images/fotoperfil.jpg";
-    sectionAbout.appendChild(avatarImg);
-    
     const textContainer = document.createElement('div');
     textContainer.className = 'textoDivSection2';
     sectionAbout.appendChild(textContainer);
@@ -104,6 +100,12 @@ function createAboutMeSection() {
     infoAvatar.textContent = "I am still learning Front End and this is my portfolio with my first project web page travel-Blog";
     infoAvatar.className = 'textAboutMe';
     textContainer.appendChild(infoAvatar);
+
+    const avatarImg = document.createElement('img');
+    avatarImg.id = 'avatarImg';
+    avatarImg.src ="images/fotoperfil.jpg";
+    sectionAbout.appendChild(avatarImg);
+    
 
     createMenuItemAboutMe();
 }
@@ -195,16 +197,13 @@ function createFooter() {
 }
 
 function createSection() {
-   
-  
+    createHomeSection();
     createAboutMeSection();
     createProjectSection();
     createContactSection();
     createFooter();
-    createHomeSection();
-   
- 
 }
 
-createSection()
-
+window.addEventListener('load', () => {
+    createSection();
+});
