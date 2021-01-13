@@ -71,6 +71,9 @@ function createHomeSection() {
     subTitleImg.className = 'titlePortfolio'
     homeImg.appendChild(subTitleImg);
 
+    
+     
+
     createMenuItemHome();
 }
 

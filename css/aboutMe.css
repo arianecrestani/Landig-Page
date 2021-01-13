@@ -1,0 +1,28 @@
+.title {
+  font-size: 35px;
+  text-align: left;
+  color: black;
+  padding-left: 5rem;
+}
+.divLandingSection2 {
+  display: flex;
+  gap: 30px;
+  height: auto;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgb(156 148 148) 4px 3px 14px 0px;
+  border-radius: 0.5rem;
+  width: 90%;
+  max-width: 1400px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#avatarImg {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  padding: 170px;
+}

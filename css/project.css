@@ -1,0 +1,22 @@
+.divLandingSection3 {
+  padding: 50px;
+}
+
+.blogSection {
+  display: flex;
+}
+
+.linkBlog {
+  padding: 30px;
+  text-decoration: none;
+  font-size: 150%;
+  color: darkgray;
+  border: 2px solid black;
+  margin: auto;
+  display: inline-flex;
+  border-radius: 10px;
+}
+
+.imgBlog {
+  width: 150px;
+}
