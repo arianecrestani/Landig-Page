@@ -1,6 +1,3 @@
-
-
-
 function createMenuItemHome() {
     const header = document.getElementsByClassName('header')[0];
     const menuItemHome = document.createElement('a');
@@ -48,7 +45,7 @@ function createHomeSection() {
     const container = document.getElementsByClassName('container')[0];
    
     const sectionHome = document.createElement('div');
-    sectionHome.className = 'divLandingSection1';
+    sectionHome.className = 'divSectionHome';
     sectionHome.id = 'home';
     container.appendChild(sectionHome);
 
@@ -71,9 +68,6 @@ function createHomeSection() {
     subTitleImg.className = 'titlePortfolio'
     homeImg.appendChild(subTitleImg);
 
-    
-     
-
     createMenuItemHome();
 }
 
@@ -87,11 +81,10 @@ function createAboutMeSection() {
     container.appendChild(titleAbout);
 
     const sectionAbout = document.createElement('div');
-    sectionAbout.className = 'divLandingSection2';
+    sectionAbout.className = 'divSectionAboutMe';
     container.appendChild(sectionAbout);
 
     const textContainer = document.createElement('div');
-    textContainer.className = 'textoDivSection2';
     sectionAbout.appendChild(textContainer);
 
     const mainTitleAboutMe = document.createElement('h2');
@@ -109,7 +102,6 @@ function createAboutMeSection() {
     avatarImg.src ="images/fotoperfil.jpg";
     sectionAbout.appendChild(avatarImg);
     
-
     createMenuItemAboutMe();
 }
 
@@ -123,7 +115,7 @@ function createProjectSection() {
     container.appendChild(titleProject);
 
     const project = document.createElement('div');
-    project.className = 'divLandingSection3';
+    project.className = 'divSectionProject';
     container.appendChild(project);
 
     const blogSection = document.createElement('div');
@@ -154,27 +146,25 @@ function createContactSection() {
     container.appendChild(titleContact);
 
     const contactSection= document.createElement('div');
-    contactSection.className = 'divLandingSection4'
+    contactSection.className = 'divSectionContact'
     container.appendChild(contactSection);
 
     const linkEmail =  document.createElement('a');
     linkEmail.href = 'mailto:ariane.crestani@gmail.com'
-    linkEmail.className = 'linkMidiasEmail';
     contactSection.appendChild(linkEmail);
 
     const midiaEmailImg =  document.createElement('img');
     midiaEmailImg.src = 'images/email.jpg';
-    midiaEmailImg.className = 'midias';
+    midiaEmailImg.className = 'medias';
     linkEmail.appendChild(midiaEmailImg);
     
     const linkLinkdin =  document.createElement('a');
     linkLinkdin.href = 'https://www.linkedin.com/in/ariane-crestani-14910ba4/';
-    linkLinkdin.className = 'linkMidiaLinkdin';
     contactSection.appendChild(linkLinkdin);
 
     const imgLinkdin = document.createElement('img');
     imgLinkdin.src = 'images/linkdin.jpg'
-    imgLinkdin.className = 'midias';
+    imgLinkdin.className = 'medias';
     linkLinkdin.appendChild(imgLinkdin);
 
     const linkGithub =  document.createElement('a');
@@ -183,7 +173,7 @@ function createContactSection() {
 
     const imgGithub = document.createElement('img');
     imgGithub.src = 'images/github.jpg'
-    imgGithub.className = 'midias';
+    imgGithub.className = 'medias';
     linkGithub.appendChild(imgGithub);
 
     createMenuItemContact();

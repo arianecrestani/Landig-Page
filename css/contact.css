@@ -1,21 +1,20 @@
-.linkBlog:hover {
-  filter: drop-shadow(0.9px 0.9px black);
-}
-.divLandingSection4 {
+.divSectionContact {
   display: flex;
   flex-flow: wrap;
   gap: 30px;
   justify-content: center;
   padding: 50px;
 }
-.midias {
+
+.linkBlog:hover {
+  filter: drop-shadow(0.9px 0.9px black);
+}
+
+.medias {
   width: 50px;
   padding-top: 20px;
 }
-.midias:hover {
+
+.medias:hover {
   filter: drop-shadow(2px 4px 6px black);
-}
-.textAboutMe {
-  font-size: 20px;
-  padding-left: 5rem;
 }

@@ -1,10 +1,4 @@
-.title {
-  font-size: 35px;
-  text-align: left;
-  color: black;
-  padding-left: 5rem;
-}
-.divLandingSection2 {
+.divSectionAboutMe {
   display: flex;
   gap: 30px;
   height: auto;
@@ -20,9 +14,21 @@
   margin-right: auto;
 }
 
+.title {
+  font-size: 35px;
+  text-align: left;
+  color: black;
+  padding-left: 5rem;
+}
+
 #avatarImg {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  padding: 170px;
+  padding: 50px;
+}
+
+.textAboutMe {
+  font-size: 20px;
+  padding-left: 2rem;
 }
