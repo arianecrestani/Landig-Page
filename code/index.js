@@ -1,44 +1,22 @@
-function createMenuItemHome() {
+function createMenuItem(href, textContent) {
     const header = document.getElementsByClassName('header')[0];
-    const menuItemHome = document.createElement('a');
+    const menuItem = document.createElement('a');
 
-    menuItemHome.href ='#home';
-    menuItemHome.className = 'menuSection';
-    menuItemHome.textContent = 'Home';
-    header.appendChild(menuItemHome);
-
+    menuItem.href = href;
+    menuItem.className = 'menuSection';
+    menuItem.textContent = textContent;
+    header.appendChild(menuItem);
 }
 
-function createMenuItemAboutMe(){
-    const header = document.getElementsByClassName('header')[0];
-    const aboutMeHeader = document.createElement('a');
+function createTitleSection(id, textContent) {
 
-    aboutMeHeader.href = '#aboutMe';
-    aboutMeHeader.className = 'menuSection'
-    aboutMeHeader.textContent = 'About Me';
-    header.appendChild(aboutMeHeader);
-}
+    const container = document.getElementsByClassName('container')[0];
+    const titleSection = document.createElement('h2');
 
-function createMenuItemProject() {
-    const header = document.getElementsByClassName('header')[0];
-   
-    const menuProject = document.createElement('a');
-
-    menuProject.href = '#project';
-    menuProject.className = 'menuSection'
-    menuProject.textContent = 'project';
-    header.appendChild(menuProject);
-}
-
-function createMenuItemContact() {
-    const header = document.getElementsByClassName('header')[0];
-
-
-    const contactMenu = document.createElement('a');
-    contactMenu.href = '#contact';
-    contactMenu.className = 'menuSection';
-    contactMenu.textContent = 'Contact';
-    header.appendChild(contactMenu);
+    titleSection.id = id;
+    titleSection.textContent = textContent;
+    titleSection.className = 'title';
+    container.appendChild(titleSection);
 }
 
 function createHomeSection() {
@@ -63,23 +41,19 @@ function createHomeSection() {
     titleImage.className = 'titleMeName'
     homeImg.appendChild(titleImage);
     
-    const subTitleImg = document.createElement ('h2');
+    const subTitleImg = document.createElement('h2');
     subTitleImg.textContent = 'Portfolio'
     subTitleImg.className = 'titlePortfolio'
     homeImg.appendChild(subTitleImg);
 
-    createMenuItemHome();
+    createMenuItem('#home', 'Home');
 }
 
 function createAboutMeSection() {
     const container = document.getElementsByClassName('container')[0];
-    
-    const titleAbout = document.createElement('h2');
-    titleAbout.id = 'aboutMe'
-    titleAbout.textContent = 'About Me'
-    titleAbout.className = 'title'
-    container.appendChild(titleAbout);
 
+    createTitleSection('aboutMe', 'About Me');
+    
     const sectionAbout = document.createElement('div');
     sectionAbout.className = 'divSectionAboutMe';
     container.appendChild(sectionAbout);
@@ -102,17 +76,14 @@ function createAboutMeSection() {
     avatarImg.src ="images/fotoperfil.jpg";
     sectionAbout.appendChild(avatarImg);
     
-    createMenuItemAboutMe();
+
+    createMenuItem('#aboutMe', 'About Me');
+    
 }
 
 function createProjectSection() {
     const container = document.getElementsByClassName('container')[0];
-    
-    const titleProject = document.createElement('h2');
-    titleProject.id = 'project';
-    titleProject.textContent = 'Project';
-    titleProject.className = 'title'
-    container.appendChild(titleProject);
+    createTitleSection('project', 'Project');
 
     const project = document.createElement('div');
     project.className = 'divSectionProject';
@@ -133,17 +104,14 @@ function createProjectSection() {
     imgBlog.className = 'imgBlog';
     linkBlog.appendChild(imgBlog)
 
-    createMenuItemProject();
+    
+    createMenuItem('#project', 'project');
+    
 }
 
 function createContactSection() {
     const container = document.getElementsByClassName('container')[0];
-
-    const titleContact = document.createElement('h2');
-    titleContact.id = 'contact';
-    titleContact.textContent = 'Contact';
-    titleContact.className = 'title';
-    container.appendChild(titleContact);
+    createTitleSection('contact', 'Contact');
 
     const contactSection= document.createElement('div');
     contactSection.className = 'divSectionContact'
@@ -176,7 +144,8 @@ function createContactSection() {
     imgGithub.className = 'medias';
     linkGithub.appendChild(imgGithub);
 
-    createMenuItemContact();
+    createMenuItem('#contact', 'contact');
+    
 }
 
 function createFooter() {
