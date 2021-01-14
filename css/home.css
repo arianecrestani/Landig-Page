@@ -1,11 +1,10 @@
 .divSectionHome {
-  padding-top: 77px;
+  padding-top: 65px;
 }
 
 #imgHome {
   width: 100%;
   max-height: 900px;
-  filter: contrast(0.7);
   position: relative;
 }
 
@@ -14,22 +13,24 @@
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  padding: 0.5rem 0px;
+  padding: 1.5rem 0px;
   position: absolute;
-  top: 10%;
+  top: 15%;
   z-index: 100;
   text-align: center;
   width: 100%;
+  position: absolute;
 }
 
-/* .titleMeName {
-  position: relative;
-  z-index: 100;
-  font-family: fantasy;
-  font-size: 110px;
+.titleMeName {
+  color: rgb(0, 0, 0);
+  font-family: GochiHand, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 5rem;
+  font-weight: normal;
+  left: 50%;
 }
 
-.titlePortfolio {
+/* .titlePortfolio {
   padding: 10rem 0px;
   position: relative;
   z-index: 100;

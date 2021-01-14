@@ -34,17 +34,18 @@ function createHomeSection() {
 
     const homeTitle = document.createElement('div');
     homeTitle.className = 'homeTitle';
-    homeImg.appendChild(homeTitle);
+    sectionHome.appendChild(homeTitle);
 
     const titleImage = document.createElement('h1');
-    titleImage.textContent= 'Ariane Crestani'
+    titleImage.textContent= 'Ariane Crestani  Portfolio'
     titleImage.className = 'titleMeName'
-    homeImg.appendChild(titleImage);
-    
-    const subTitleImg = document.createElement('h2');
-    subTitleImg.textContent = 'Portfolio'
-    subTitleImg.className = 'titlePortfolio'
-    homeImg.appendChild(subTitleImg);
+    homeTitle.appendChild(titleImage);
+
+
+    // const subTitleImg = document.createElement('h2');
+    // subTitleImg.textContent = 'Portfolio'
+    // subTitleImg.className = 'titlePortfolio'
+    // homeImg.appendChild(subTitleImg);
 
     createMenuItem('#home', 'Home');
 }
@@ -159,11 +160,16 @@ function createFooter() {
 }
 
 function createSection() {
+     
     createHomeSection();
     createAboutMeSection();
     createProjectSection();
     createContactSection();
     createFooter();
+  
+  
+    
+    
 }
 
 window.addEventListener('load', () => {
