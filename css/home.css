@@ -1,11 +1,8 @@
-.divSectionHome {
-  padding-top: 65px;
-}
-
 #imgHome {
   width: 100%;
-  max-height: 900px;
+  max-height: 1000px;
   position: relative;
+  object-fit: cover;
 }
 
 .homeTitle {
@@ -16,7 +13,6 @@
   padding: 1.5rem 0px;
   position: absolute;
   top: 15%;
-  z-index: 100;
   text-align: center;
   width: 100%;
   position: absolute;
@@ -25,17 +21,7 @@
 .titleMeName {
   color: rgb(0, 0, 0);
   font-family: GochiHand, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: normal;
   left: 50%;
 }
-
-/* .titlePortfolio {
-  padding: 10rem 0px;
-  position: relative;
-  z-index: 100;
-  text-align: center;
-  width: 100%;
-  font-family: fantasy;
-  font-size: 80px;
-} */

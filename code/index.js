@@ -22,30 +22,24 @@ function createTitleSection(id, textContent) {
 function createHomeSection() {
     const container = document.getElementsByClassName('container')[0];
    
-    const sectionHome = document.createElement('div');
-    sectionHome.className = 'divSectionHome';
-    sectionHome.id = 'home';
-    container.appendChild(sectionHome);
+    const homeSection = document.createElement('div');
+    homeSection.className = 'divSectionHome';
+    homeSection.id = 'home';
+    container.appendChild(homeSection);
 
     const homeImg = document.createElement('img');
     homeImg.src = "images/main3.jpg";
-    homeImg.id ='imgHome'
-    sectionHome.appendChild(homeImg);
+    homeImg.id ='imgHome';
+    homeSection.appendChild(homeImg);
 
     const homeTitle = document.createElement('div');
     homeTitle.className = 'homeTitle';
-    sectionHome.appendChild(homeTitle);
+    homeSection.appendChild(homeTitle);
 
     const titleImage = document.createElement('h1');
     titleImage.textContent= 'Ariane Crestani  Portfolio'
     titleImage.className = 'titleMeName'
     homeTitle.appendChild(titleImage);
-
-
-    // const subTitleImg = document.createElement('h2');
-    // subTitleImg.textContent = 'Portfolio'
-    // subTitleImg.className = 'titlePortfolio'
-    // homeImg.appendChild(subTitleImg);
 
     createMenuItem('#home', 'Home');
 }
@@ -55,27 +49,28 @@ function createAboutMeSection() {
 
     createTitleSection('aboutMe', 'About Me');
     
-    const sectionAbout = document.createElement('div');
-    sectionAbout.className = 'divSectionAboutMe';
-    container.appendChild(sectionAbout);
+    const aboutSection = document.createElement('div');
+    aboutSection.className = 'divSectionAboutMe';
+    container.appendChild(aboutSection);
 
     const textContainer = document.createElement('div');
-    sectionAbout.appendChild(textContainer);
+    textContainer.className = 'textContainer';
+    aboutSection.appendChild(textContainer);
 
     const mainTitleAboutMe = document.createElement('h2');
     mainTitleAboutMe.textContent = 'I am Ariane!';
     mainTitleAboutMe.className = 'textAboutMe';
     textContainer.appendChild(mainTitleAboutMe);
 
-    const infoAvatar = document.createElement('p'); 
-    infoAvatar.textContent = "I am still learning Front End and this is my portfolio with my first project web page travel-Blog";
-    infoAvatar.className = 'textAboutMe';
-    textContainer.appendChild(infoAvatar);
+    const infoAboutMe = document.createElement('p'); 
+    infoAboutMe.textContent = "I am still learning Front End and this is my portfolio with my first project web page travel-Blog";
+    infoAboutMe.className = 'textAboutMe';
+    textContainer.appendChild(infoAboutMe);
 
     const avatarImg = document.createElement('img');
-    avatarImg.id = 'avatarImg';
+    avatarImg.className = 'avatarImg';
     avatarImg.src ="images/fotoperfil.jpg";
-    sectionAbout.appendChild(avatarImg);
+    aboutSection.appendChild(avatarImg);
     
 
     createMenuItem('#aboutMe', 'About Me');
@@ -86,13 +81,13 @@ function createProjectSection() {
     const container = document.getElementsByClassName('container')[0];
     createTitleSection('project', 'Project');
 
-    const project = document.createElement('div');
-    project.className = 'divSectionProject';
-    container.appendChild(project);
+    const projectSection = document.createElement('div');
+    projectSection.className = 'divSectionProject';
+    container.appendChild(projectSection);
 
     const blogSection = document.createElement('div');
     blogSection.className = 'blogSection';
-    project.appendChild(blogSection);
+    projectSection.appendChild(blogSection);
 
     const linkBlog =  document.createElement('a');
     linkBlog.href = 'https://arianecrestani.github.io/travel-blog/blog-post.html'

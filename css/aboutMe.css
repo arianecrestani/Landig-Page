@@ -13,22 +13,22 @@
   margin-left: auto;
   margin-right: auto;
 }
-
+.textContainer {
+  font-size: 18px;
+  padding-left: 8rem;
+}
 .title {
-  font-size: 44px;
+  font-size: 40px;
   text-align: left;
   color: black;
   padding-left: 5rem;
+  font-weight: normal;
+  padding-top: 10rem;
 }
 
-#avatarImg {
+.avatarImg {
   border-radius: 50%;
   width: 200px;
   height: 200px;
   padding: 50px;
-}
-
-.textAboutMe {
-  font-size: 20px;
-  padding-left: 2rem;
 }

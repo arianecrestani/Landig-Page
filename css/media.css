@@ -1,5 +1,57 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 660px) {
   .html {
-    font-size: 18px;
+    font-size: 22px;
   }
+
+  .textAboutMe {
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 20px;
+  }
+  .divSectionAboutMe {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .header {
+    font-size: 16px;
+  }
+  .titleMeName {
+    font-size: 2.5rem;
+  }
+  .title {
+    font-size: 26px;
+    padding-left: 2rem;
+  }
+  .homeTitle {
+    top: 13%;
+  }
+  .textContainer {
+    padding-left: 2rem;
+    padding-bottom: 59px;
+  }
+  .header {
+    font-size: 23px;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* html,
+  body {
+    font-size: 100px;
+  }
+  .header {
+    font-size: 42px;
+    padding: 1rem;
+  }
+  .homeTitle {
+    top: 6%;
+  }
+  .titleMeName {
+    font-size: 4rem;
+  }
+  .textContainer {
+    font-size: 35px;
+  } */
 }
