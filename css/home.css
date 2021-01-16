@@ -12,14 +12,15 @@
   align-items: center;
   padding: 1.5rem 0px;
   position: absolute;
-  top: 15%;
+  top: 20%;
   text-align: center;
   width: 100%;
   position: absolute;
+  color: #606060;
 }
 
 .titleMeName {
-  color: rgb(0, 0, 0);
+  color: #606060;
   font-family: GochiHand, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 4.5rem;
   font-weight: normal;

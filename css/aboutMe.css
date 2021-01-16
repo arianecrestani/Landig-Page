@@ -16,19 +16,20 @@
 .textContainer {
   font-size: 18px;
   padding-left: 8rem;
+  color: #606060;
 }
 .title {
   font-size: 40px;
   text-align: left;
-  color: black;
+  color: #606060;
   padding-left: 5rem;
   font-weight: normal;
-  padding-top: 10rem;
+  padding-top: 6rem;
 }
 
 .avatarImg {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  padding: 50px;
+  padding: 70px;
 }
