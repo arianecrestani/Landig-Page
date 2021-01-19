@@ -19,13 +19,46 @@ function createTitleSection(id, textContent) {
     container.appendChild(titleSection);
 }
 
+function createTitleSection2(id, textContent) {
+    const titleSection = document.createElement('h2');
+
+    titleSection.id = id;
+    titleSection.textContent = textContent;
+    titleSection.className = 'title';
+    return titleSection;
+}
+function createTitleSection3(id, textContent) {
+    const titleSection = document.createElement('h2');
+
+    titleSection.id = id;
+    titleSection.textContent = textContent;
+    titleSection.className = 'title';
+    return titleSection;
+}
+function createTitleSection4(id, textContent) {
+    const titleSection = document.createElement('h2');
+
+    titleSection.id = id;
+    titleSection.textContent = textContent;
+    titleSection.className = 'title';
+    return titleSection;
+}
+function createDivSection() {
+    const section = document.createElement('div');
+    section.className = 'divSection';
+    return section;
+}
+
 function createHomeSection() {
     const container = document.getElementsByClassName('container')[0];
    
+    const section = createDivSection();
+    container.appendChild(section);
+
     const homeSection = document.createElement('div');
     homeSection.className = 'divSectionHome';
     homeSection.id = 'home';
-    container.appendChild(homeSection);
+    section.appendChild(homeSection);
 
     const homeImg = document.createElement('img');
     homeImg.src = "images/main3.jpg";
@@ -47,11 +80,15 @@ function createHomeSection() {
 function createAboutMeSection() {
     const container = document.getElementsByClassName('container')[0];
 
-    createTitleSection('aboutMe', 'About Me');
+    const section = createDivSection();
+    container.appendChild(section);
+
+    const titleSection = createTitleSection2('aboutMe', 'About Me');
+    section.appendChild(titleSection);
     
     const aboutSection = document.createElement('div');
     aboutSection.className = 'divSectionAboutMe';
-    container.appendChild(aboutSection);
+    section.appendChild(aboutSection);
 
     const textContainer = document.createElement('div');
     textContainer.className = 'textContainer';
@@ -79,11 +116,16 @@ function createAboutMeSection() {
 
 function createProjectSection() {
     const container = document.getElementsByClassName('container')[0];
-    createTitleSection('project', 'Project');
 
+    const section = createDivSection();
+    container.appendChild(section);
+
+    const titleSection =  createTitleSection3('project', 'Project');
+    section.appendChild(titleSection);
+   
     const projectSection = document.createElement('div');
     projectSection.className = 'divSectionProject';
-    container.appendChild(projectSection);
+    section.appendChild(projectSection);
 
     const blogSection = document.createElement('div');
     blogSection.className = 'blogSection';
@@ -107,11 +149,16 @@ function createProjectSection() {
 
 function createContactSection() {
     const container = document.getElementsByClassName('container')[0];
-    createTitleSection('contact', 'Contact');
+  
+    const section = createDivSection();
+    container.appendChild(section);
+
+    const titleSection = createTitleSection4('contact', 'Contact');
+    section.appendChild(titleSection);
 
     const contactSection= document.createElement('div');
     contactSection.className = 'divSectionContact'
-    container.appendChild(contactSection);
+    section.appendChild(contactSection);
 
     const linkEmail =  document.createElement('a');
     linkEmail.href = 'mailto:ariane.crestani@gmail.com'
@@ -161,12 +208,40 @@ function createSection() {
     createProjectSection();
     createContactSection();
     createFooter();
-  
-  
+}
+
+function highlightMenuSection() {
     
+    // $sections incleudes all of the container divs that relate to menu items.
+    const sections = document.getElementsByClassName('divSection');
+
+    window.addEventListener('scroll', (event) => {
+        // console.log(event);
+        console.log(event.target.scrollingElement.scrollTop);
+
+        // currentScroll is the number of pixels the window has been scrolled   
+
+        // $currentSection is somewhere to place the section we must be looking at
+
+
+        // We check the position of each of the divs compared to the windows scroll positon
+
+        // divPosition is the position down the page in px of the current section we are testing   
+
+        // If the divPosition is less the the currentScroll position the div we are testing has moved above the window edge.
+
+        // the -1 is so that it includes the div 1px before the div leave the top of the window.
+
+        // We have either read the section or are currently reading the section so we'll call it our current section
+
+        // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
+
+    });
     
 }
 
 window.addEventListener('load', () => {
     createSection();
+    highlightMenuSection();
 });
+
