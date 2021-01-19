@@ -240,6 +240,8 @@ function highlightMenuSection() {
     
 }
 
+// how I can do in case the Section page is not the same pixel each section 
+
 window.addEventListener('load', () => {
     createSection();
     highlightMenuSection();
