@@ -212,38 +212,33 @@ function createSection() {
 
 function highlightMenuSection() {
     
-    // $sections incleudes all of the container divs that relate to menu items.
     const sections = document.getElementsByClassName('divSection');
+    const menu = document.getElementsByClassName('menuSection');
+    
+    document.addEventListener('scroll', (event) => {
+        console.log(document.body.offsetHeight);
+        let selectedMenuItem;
 
-    window.addEventListener('scroll', (event) => {
-        // console.log(event);
-        console.log(event.target.scrollingElement.scrollTop);
-
-        // currentScroll is the number of pixels the window has been scrolled   
-
-        // $currentSection is somewhere to place the section we must be looking at
-
-
-        // We check the position of each of the divs compared to the windows scroll positon
-
-        // divPosition is the position down the page in px of the current section we are testing   
-
-        // If the divPosition is less the the currentScroll position the div we are testing has moved above the window edge.
-
-        // the -1 is so that it includes the div 1px before the div leave the top of the window.
-
-        // We have either read the section or are currently reading the section so we'll call it our current section
-
-        // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
-
+        for(let i = 0; i < sections.length; i++) {
+            const section = sections[i];
+            const isShowingCurrentSection = section.getBoundingClientRect().top - document.body.offsetHeight/4 <= document.body.offsetHeight/2;
+            
+            if(isShowingCurrentSection) {
+                selectedMenuItem = menu[i];
+            } 
+        }
+        for (const item of menu) {
+            if (item === selectedMenuItem) {
+                item.setAttribute('style', 'background-color:#606060');
+            } else {
+                item.setAttribute('style', 'background-color: none;');
+            }
+        }
     });
     
 }
-
-// how I can do in case the Section page is not the same pixel each section 
 
 window.addEventListener('load', () => {
     createSection();
     highlightMenuSection();
 });
-
