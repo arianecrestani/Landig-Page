@@ -17,4 +17,4 @@ The project was required to have an interactive menu navigation using janva spcr
 
 
 
-<img src = "images/main2.jpg">
+<img src = "images/main2.png">
