@@ -18,3 +18,6 @@ The project was required to have an interactive menu navigation using java spcri
 
 
 <img src = "images/main2.jpg">
+
+## Inspiration
+Criate portfolio about me. 
