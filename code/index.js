@@ -229,7 +229,7 @@ function highlightMenuSection() {
         }
         for (const item of menu) {
             if (item === selectedMenuItem) {
-                item.setAttribute('style', 'background-color:#606060');
+                item.setAttribute('style', 'background-color:silver');
             } else {
                 item.setAttribute('style', 'background-color: none;');
             }
