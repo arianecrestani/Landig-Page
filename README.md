@@ -15,4 +15,6 @@ The project was required to have an interactive menu navigation using janva spcr
 * Scroll to Anchor - When clicking an item from the navigation menu, the link should scroll to the appropriate section.
 * The UI was criated using Java-script in ordend to be dynamic 
 
-![main2](https://user-images.githubusercontent.com/67700408/105393465-aad72c00-5c1c-11eb-9a03-c2bc853717b7.jpg)
+
+
+![](images/main2.png)
