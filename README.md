@@ -6,7 +6,7 @@
 This project was made independently and without any starter code. It is made with HTML, CSS and JavaScript, following a series of lectures on the theme “JavaScript & the DOM”.
 
 ## General info
-The project was required to have an interactive menu navigation using java spcript.
+The project was required to have an interactive menu navigation using java script.
 
 ## Features
 
