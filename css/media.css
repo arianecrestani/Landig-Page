@@ -51,6 +51,7 @@
   }
   .linkBlog {
     padding: 15px;
+    font-size: 100%;
   }
   .header {
     display: flex;
@@ -91,6 +92,9 @@
   }
   .textAboutMe {
     font-size: 15px;
+  }
+  .imgBlog {
+    width: 120px;
   }
 }
 @media only screen and (max-width: 510px) {
