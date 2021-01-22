@@ -174,7 +174,7 @@ function createContactSection() {
     contactSection.appendChild(linkLinkdin);
 
     const imgLinkdin = document.createElement('img');
-    imgLinkdin.src = 'images/linkdin.jpg'
+    imgLinkdin.src = 'images/linkedin.jpg';
     imgLinkdin.className = 'medias';
     linkLinkdin.appendChild(imgLinkdin);
 
