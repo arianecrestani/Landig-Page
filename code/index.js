@@ -256,15 +256,3 @@ window.addEventListener('load', () => {
     highlightMenuSection();
 });
 
-
-function addNavClickHandler(navlink) {
-
-  navlink.addEventListener('click', function (event) {
-    event.preventDefault();
-
-    sectionID = navlink.getAttribute("href").slice(1);
-    document.getElementById(sectionID).scrollIntoView({
-    behavior: 'smooth'
-    });
-  });
-}
