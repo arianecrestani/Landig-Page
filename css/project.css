@@ -7,13 +7,13 @@
 }
 
 .linkBlog {
-  padding: 75px;
+  padding: 45px;
   text-decoration: none;
-  font-size: 150%;
+  font-size: 175%;
   color: darkgray;
   border: 2px solid black;
   margin: auto;
-  display: inline-flex;
+  display: grid;
   border-radius: 10px;
 }
 
