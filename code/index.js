@@ -52,19 +52,24 @@ function createDivSection() {
 function createHomeSection() {
     //get container
     const container = document.getElementsByClassName('container')[0];
-   //get createDivSection criated
+   //get DivSection criated
     const section = createDivSection();
-    //addc on container
+    //addc section on container
     container.appendChild(section);
-
+    //created new element homeDiv
     const homeSection = document.createElement('div');
+    //created a className and id
     homeSection.className = 'divSectionHome';
     homeSection.id = 'home';
+    //addc section on homeSection
     section.appendChild(homeSection);
-
+    //created new img element 
     const homeImg = document.createElement('img');
+    //source img
     homeImg.src = "images/main3.jpg";
+    // id img
     homeImg.id ='imgHome';
+    //adcc a homeImg on homeSection
     homeSection.appendChild(homeImg);
 
     const homeTitle = document.createElement('div');
