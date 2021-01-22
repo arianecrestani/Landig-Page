@@ -23,4 +23,4 @@ The project was required to have an interactive menu navigation using java scrip
 Criated portfolio about me. 
 
 ### Link this page
- https://arianecrestani.github.io/LandigPage/
+https://arianecrestani.github.io/LandigPage/
