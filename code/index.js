@@ -1,4 +1,4 @@
-function createMenuItem(href, textContent) {
+const createMenuItem = (href, textContent) => {
     const header = document.getElementsByClassName('header')[0];
     const menuItem = document.createElement('a');
 
@@ -48,11 +48,13 @@ function createDivSection() {
     section.className = 'divSection';
     return section;
 }
-
+//
 function createHomeSection() {
+    //get container
     const container = document.getElementsByClassName('container')[0];
-   
+   //get createDivSection criated
     const section = createDivSection();
+    //addc on container
     container.appendChild(section);
 
     const homeSection = document.createElement('div');
@@ -191,7 +193,7 @@ function createContactSection() {
     
 }
 
-function createFooter() {
+function createFooter ()  {
 
     const container = document.getElementsByClassName('container')[0];
 
@@ -201,14 +203,14 @@ function createFooter() {
     
 }
 
-function createSection() {
-     
+const createSection = () => {
     createHomeSection();
     createAboutMeSection();
     createProjectSection();
     createContactSection();
     createFooter();
 }
+
 
 function highlightMenuSection() {
     
@@ -217,16 +219,22 @@ function highlightMenuSection() {
     
     document.addEventListener('scroll', (event) => {
         console.log(document.body.offsetHeight);
+        console.log(event);
         let selectedMenuItem;
 
         for(let i = 0; i < sections.length; i++) {
             const section = sections[i];
-            const isShowingCurrentSection = section.getBoundingClientRect().top - document.body.offsetHeight/4 <= document.body.offsetHeight/2;
+            const isShowingCurrentSection = section.getBoundingClientRect().top - document.body.offsetHeight/5 <= document.body.offsetHeight/2;
             
             if(isShowingCurrentSection) {
                 selectedMenuItem = menu[i];
             } 
         }
+
+        if (event.target.scrollingElement.scrollTop == 0) { 
+            selectedMenuItem = menu[0];
+        } 
+        
         for (const item of menu) {
             if (item === selectedMenuItem) {
                 item.setAttribute('style', 'background-color:silver');
@@ -242,3 +250,16 @@ window.addEventListener('load', () => {
     createSection();
     highlightMenuSection();
 });
+
+
+function addNavClickHandler(navlink) {
+
+  navlink.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    sectionID = navlink.getAttribute("href").slice(1);
+    document.getElementById(sectionID).scrollIntoView({
+    behavior: 'smooth'
+    });
+  });
+}

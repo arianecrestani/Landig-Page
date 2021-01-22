@@ -1,4 +1,4 @@
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 810px) {
   .html {
     font-size: 22px;
   }
@@ -15,6 +15,8 @@
     text-align: justify;
   }
   .header {
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
   }
   .titleMeName {
@@ -26,6 +28,7 @@
   }
   .homeTitle {
     top: 13%;
+    padding-top: 250px;
   }
   .textContainer {
     padding-left: 2rem;
@@ -34,6 +37,10 @@
   .header {
     font-size: 23px;
     padding: 1rem;
+    flex-direction: column;
+  }
+  #imgHome {
+    padding-top: 250px;
   }
 }
 
@@ -46,6 +53,8 @@
     padding: 15px;
   }
   .header {
+    display: flex;
+    flex-direction: column;
     font-size: 13px;
   }
   .homeTitle {
@@ -78,8 +87,14 @@
     width: 100%;
     position: relative;
     height: 114%;
+    padding-top: 210px;
   }
   .textAboutMe {
     font-size: 15px;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .header {
+    flex-direction: column;
   }
 }
