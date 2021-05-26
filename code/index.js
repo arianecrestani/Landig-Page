@@ -95,12 +95,12 @@ function createAboutMeSection() {
     aboutSection.appendChild(textContainer);
 
     const mainTitleAboutMe = document.createElement('h2');
-    mainTitleAboutMe.textContent = 'I am Ariane!';
+    mainTitleAboutMe.textContent = 'Hi, I am Ariane!';
     mainTitleAboutMe.className = 'textAboutMe';
     textContainer.appendChild(mainTitleAboutMe);
 
     const infoAboutMe = document.createElement('p'); 
-    infoAboutMe.textContent = "through the udacity course I had the opportunity to do some projects and some of them are here in the profile you are also invited to look on my github more about my profile and the projects";
+    infoAboutMe.textContent = "Through the Udacity course I had the opportunity to do some projects for which I was able to develop my potential in web development and some of their projects are here in the profile you are also invited to look on my GitHub profile.";
     infoAboutMe.className = 'textAboutMe';
     textContainer.appendChild(infoAboutMe);
 
@@ -132,7 +132,7 @@ function createProjectSection() {
     projectSection.appendChild(blogSection);
 
     const linkBlog =  document.createElement('a');
-    linkBlog.href = 'https://arianecrestani.github.io/travel-blog/blog-post.html'
+    linkBlog.href = 'https://arianecrestani.github.io/Travel-blog/'
     linkBlog.textContent = 'Travel-Blog';
     linkBlog.className = 'linkBlog';
     blogSection.appendChild(linkBlog);
