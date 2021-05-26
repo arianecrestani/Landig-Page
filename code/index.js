@@ -100,7 +100,7 @@ function createAboutMeSection() {
     textContainer.appendChild(mainTitleAboutMe);
 
     const infoAboutMe = document.createElement('p'); 
-    infoAboutMe.textContent = "Through the Udacity course I had the opportunity to do some projects for which I was able to develop my potential in web development and some of their projects are here in the profile you are also invited to look on my GitHub profile.";
+    infoAboutMe.textContent = "Through the Udacity course I had the opportunity to do some projects for which I was able to develop my potential in web development and some of their projects are here in the profile you are also invited to look on my GitHub profile ";
     infoAboutMe.className = 'textAboutMe';
     textContainer.appendChild(infoAboutMe);
 
