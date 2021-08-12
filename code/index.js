@@ -100,7 +100,14 @@ function createAboutMeSection() {
     textContainer.appendChild(mainTitleAboutMe);
 
     const infoAboutMe = document.createElement('p'); 
-    infoAboutMe.textContent = "Through the Udacity course I had the opportunity to do some projects for which I was able to develop my potential in web development and some of their projects are here in the profile you are also invited to look on my GitHub profile ";
+    infoAboutMe.textContent = `I am a graduate and have worked for many years in the commercial area include the sale of software.
+    When I moved to Berlin I learned the German Language as well and worked in a clothing store Uniqlo to have more experience in the commercial area and language practice.
+    
+    While living in Berlin my circle of friends was more from technology. 
+    These inspired me to learn more about that.Then I start to see myself as an engineer.
+    My interest and passion in the first view were of the visual of the page the process to build it.
+    My first step to learn was in platforms like Free Code Camp that I could practice.
+    I've happily switched my career from commercial management to engineering. I got certified as a front-end developer by Udacity. I learned skills to build a web page using HTML, CSS, and Javascript`
     infoAboutMe.className = 'textAboutMe';
     textContainer.appendChild(infoAboutMe);
 
@@ -144,6 +151,7 @@ function createProjectSection() {
 
     
     createMenuItem('#project', 'project');
+    
     
 }
 
