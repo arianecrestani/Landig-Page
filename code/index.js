@@ -123,6 +123,7 @@ function createAboutMeSection() {
 
 function createProjectSection() {
     const container = document.getElementsByClassName('container')[0];
+  
 
     const section = createDivSection();
     container.appendChild(section);
@@ -134,26 +135,61 @@ function createProjectSection() {
     projectSection.className = 'divSectionProject';
     section.appendChild(projectSection);
 
+
     const blogSection = document.createElement('div');
-    blogSection.className = 'blogSection';
+    blogSection.className = 'section';
     projectSection.appendChild(blogSection);
+
 
     const linkBlog =  document.createElement('a');
     linkBlog.href = 'https://arianecrestani.github.io/Travel-blog/'
-    linkBlog.textContent = 'Travel-Blog';
-    linkBlog.className = 'linkBlog';
+    linkBlog.textContent = 'Travel Blog';
+    linkBlog.className = 'links';
     blogSection.appendChild(linkBlog);
 
+
     const imgBlog = document.createElement('img');
-    imgBlog.src = 'images/logo.jpg';
-    imgBlog.className = 'imgBlog';
+    imgBlog.src = 'images/screen.png';
+    imgBlog.className = 'imagesFormat';
     linkBlog.appendChild(imgBlog)
+
+    const toDoSection = document.createElement('div');
+    toDoSection.className = 'section';
+    projectSection.appendChild(toDoSection);
+
+    const linkToDo =  document.createElement('a');
+    linkToDo.href = 'https://arianecrestani.github.io/To-do-list/'
+    linkToDo.textContent = 'toDo';
+    linkToDo.className = 'links';
+    toDoSection.appendChild(linkToDo);
+
+    const imgToDo = document.createElement('img');
+    imgToDo.src = 'images/toDo.png';
+    imgToDo.className = 'imagesFormat';
+    linkToDo.appendChild(imgToDo)
+
+    const movieDbSection = document.createElement('div');
+    movieDbSection.className = 'section';
+    projectSection.appendChild(movieDbSection);
+
+    const linkMovieDb =  document.createElement('a');
+    linkMovieDb.href = 'https://arianecrestani.github.io/Movie-Preview/'
+    linkMovieDb.textContent = 'movie';
+    linkMovieDb.className = 'links';
+    movieDbSection.appendChild(linkMovieDb);
+
+    const imgMovieDb = document.createElement('img');
+    imgMovieDb.src = 'images/movie.png';
+    imgMovieDb.className = 'imagesFormat';
+    linkMovieDb.appendChild(imgMovieDb)
 
     
     createMenuItem('#project', 'project');
     
     
 }
+
+
 
 function createContactSection() {
     const container = document.getElementsByClassName('container')[0];

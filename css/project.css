@@ -1,8 +1,11 @@
 .divSectionProject {
-  padding: 50px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.blogSection {
+.section {
   margin: 4%;
   display: flex;
   flex-direction: row;
@@ -10,17 +13,22 @@
   
 }
 
-.linkBlog {
+.links {
   padding: 45px;
   text-decoration: none;
   font-size: 175%;
   color: darkgray;
-  border: 2px solid black;
   margin: auto;
   display: grid;
   border-radius: 10px;
 }
 
-.imgBlog {
-  width: 150px;
+.imagesFormat  {
+  width: 300px;
+ 
+}
+
+.imagesFormat:hover  {
+  transform: scale(1.5);
+ 
 }
