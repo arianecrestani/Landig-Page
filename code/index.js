@@ -100,14 +100,12 @@ function createAboutMeSection() {
     textContainer.appendChild(mainTitleAboutMe);
 
     const infoAboutMe = document.createElement('p'); 
-    infoAboutMe.textContent = `I am a graduate and have worked for many years in the commercial area include the sale of software.
-    When I moved to Berlin I learned the German Language as well and worked in a clothing store Uniqlo to have more experience in the commercial area and language practice.
+    infoAboutMe.textContent = `
     
-    While living in Berlin my circle of friends was more from technology. 
-    These inspired me to learn more about that.Then I start to see myself as an engineer.
     My interest and passion in the first view were of the visual of the page the process to build it.
     My first step to learn was in platforms like Free Code Camp that I could practice.
-    I've happily switched my career from commercial management to engineering. I got certified as a front-end developer by Udacity. I learned skills to build a web page using HTML, CSS, and Javascript`
+    I got certified as a front-end developer by Udacity. I learned skills to build a web page using HTML, CSS, and Javascript`
+    
     infoAboutMe.className = 'textAboutMe';
     textContainer.appendChild(infoAboutMe);
 
@@ -174,7 +172,7 @@ function createProjectSection() {
 
     const linkMovieDb =  document.createElement('a');
     linkMovieDb.href = 'https://arianecrestani.github.io/Movie-Preview/'
-    linkMovieDb.textContent = 'movie';
+    linkMovieDb.textContent = 'Movie';
     linkMovieDb.className = 'links';
     movieDbSection.appendChild(linkMovieDb);
 
@@ -188,7 +186,6 @@ function createProjectSection() {
     
     
 }
-
 
 
 function createContactSection() {
