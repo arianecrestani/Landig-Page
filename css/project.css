@@ -14,8 +14,9 @@
 }
 
 .links {
-  padding: 45px;
+  padding: 25px;
   text-decoration: none;
+  text-align: center;
 
   font-size: 175%;
   color: darkgray;

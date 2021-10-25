@@ -105,7 +105,8 @@ function createAboutMeSection() {
     My interest and passion in the first view were of the visual of the page the process to build it.
     My first step to learn was in platforms like Free Code Camp that I could practice.
     I got certified as a front-end developer by Udacity. I learned skills to build a web page using HTML, CSS, and Javascript`
-    
+
+
     infoAboutMe.className = 'textAboutMe';
     textContainer.appendChild(infoAboutMe);
 
@@ -118,6 +119,7 @@ function createAboutMeSection() {
     createMenuItem('#aboutMe', 'About Me');
     
 }
+
 
 function createProjectSection() {
     const container = document.getElementsByClassName('container')[0];
@@ -157,7 +159,7 @@ function createProjectSection() {
 
     const linkToDo =  document.createElement('a');
     linkToDo.href = 'https://arianecrestani.github.io/To-do-list/'
-    linkToDo.textContent = 'toDo';
+    linkToDo.textContent = 'To Do';
     linkToDo.className = 'links';
     toDoSection.appendChild(linkToDo);
 
@@ -180,6 +182,36 @@ function createProjectSection() {
     imgMovieDb.src = 'images/movie.png';
     imgMovieDb.className = 'imagesFormat';
     linkMovieDb.appendChild(imgMovieDb)
+
+    const forescastAppSection = document.createElement('div');
+    forescastAppSection.className = 'section';
+    projectSection.appendChild(forescastAppSection);
+
+    const forescastAppLink =  document.createElement('a');
+    forescastAppLink.href = 'https://github.com/arianecrestani/Project-weather'
+    forescastAppLink.textContent = 'ForecastApp';
+    forescastAppLink.className = 'links';
+    forescastAppSection.appendChild(forescastAppLink);
+
+    const imgForecast = document.createElement('img');
+    imgForecast.src = 'images/forecast.png';
+    imgForecast.className = 'imagesFormat';
+    forescastAppLink.appendChild(imgForecast)
+
+    const sentimentSection = document.createElement('div');
+    sentimentSection.className = 'section';
+    projectSection.appendChild(sentimentSection);
+
+    const sentimentAppLink =  document.createElement('a');
+    sentimentAppLink.href = 'https://github.com/arianecrestani/Evaluate-a-News-Article-with-Natural-Language-Processing'
+    sentimentAppLink.textContent = 'Sntiment Analysis';
+    sentimentAppLink.className = 'links';
+    sentimentSection.appendChild(sentimentAppLink);
+
+    const imgSentiment = document.createElement('img');
+    imgSentiment.src = 'images/sentiment.png';
+    imgSentiment.className = 'imagesFormat';
+    sentimentAppLink.appendChild(imgSentiment)
 
     
     createMenuItem('#project', 'project');
