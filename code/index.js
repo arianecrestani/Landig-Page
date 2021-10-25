@@ -102,9 +102,10 @@ function createAboutMeSection() {
     const infoAboutMe = document.createElement('p'); 
     infoAboutMe.textContent = `
     
-    My interest and passion in the first view were of the visual of the page the process to build it.
+    My interest and passion in the first view in web developer were of the visual of the page the process to build it.
     My first step to learn was in platforms like Free Code Camp that I could practice.
-    I got certified as a front-end developer by Udacity. I learned skills to build a web page using HTML, CSS, and Javascript`
+    I got certified as a front-end developer by Udacity. I learned skills to build a web page using HTML, CSS, and Javascript
+    and I am stil learning java script by ReDI School and learning VUE framework`
 
 
     infoAboutMe.className = 'textAboutMe';
