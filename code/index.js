@@ -129,6 +129,19 @@ function createProjectSection() {
     projectSection.className = 'divSectionProject';
     section.appendChild(projectSection);
 
+    const onlineShopping = document.createElement('div');
+    onlineShopping.className = 'section';
+    projectSection.appendChild(onlineShopping);
+
+    const onlineShoppingLink =  document.createElement('a');
+    onlineShoppingLink.href = 'https://arianecrestani.github.io/online-shopping/'
+    onlineShoppingLink.className = 'links';
+    onlineShopping.appendChild(onlineShoppingLink);
+
+    const onlineShoppingImg = document.createElement('img');
+    onlineShoppingImg.src = 'images/onlineShopping.png';
+    onlineShoppingImg.className = 'imagesFormat';
+    onlineShoppingLink.appendChild(onlineShoppingImg)
 
     const blogSection = document.createElement('div');
     blogSection.className = 'section';
@@ -201,6 +214,7 @@ function createProjectSection() {
     imgSentiment.src = 'images/sentiment.png';
     imgSentiment.className = 'imagesFormat';
     sentimentAppLink.appendChild(imgSentiment)
+
 
     
     createMenuItem('#project', 'project');

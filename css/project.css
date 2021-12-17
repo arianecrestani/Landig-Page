@@ -35,7 +35,7 @@
   border-radius: 10px;
   object-fit: cover;
   height: 350px;
-  transition: all 0.5s linear;
+  transition: all 0.9s linear;
   filter: drop-shadow(2px 4px 6px black);
  
 }
@@ -46,3 +46,4 @@
 
  
 }
+
