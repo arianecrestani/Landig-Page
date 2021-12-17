@@ -1,6 +1,7 @@
 #imgHome {
+
+  height: 100vh;
   width: 100%;
-  max-height: 1000px;
   position: relative;
   object-fit: cover;
 }
@@ -10,19 +11,20 @@
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  padding: 1.5rem 0px;
   position: absolute;
-  top: 20%;
+  top: 40%;
   text-align: center;
   width: 100%;
   position: absolute;
   color: #606060;
+ 
 }
 
 .titleMeName {
   color: #606060;
-  font-family: GochiHand, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: ;
   font-size: 4.5rem;
   font-weight: normal;
   left: 50%;
+
 }

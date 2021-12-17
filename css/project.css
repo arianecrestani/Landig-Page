@@ -3,10 +3,12 @@
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+  background-color:
+  #DACAC4 ;
 }
 
 .section {
-  margin: 4%;
+  margin: 1%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -17,16 +19,20 @@
   padding: 25px;
   text-decoration: none;
   text-align: center;
-
+  transition: all 1s linear;
   font-size: 175%;
   color: darkgray;
   margin: auto;
   display: grid;
   border-radius: 10px;
+  
 }
 
 .imagesFormat  {
-  width: 300px;
+  width: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 350px;
  
 }
 

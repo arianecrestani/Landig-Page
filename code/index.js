@@ -95,18 +95,11 @@ function createAboutMeSection() {
     aboutSection.appendChild(textContainer);
 
     const mainTitleAboutMe = document.createElement('h2');
-    mainTitleAboutMe.textContent = 'Hi, I am Ariane!';
+    
     mainTitleAboutMe.className = 'textAboutMe';
     textContainer.appendChild(mainTitleAboutMe);
 
-    const infoAboutMe = document.createElement('p'); 
-    infoAboutMe.textContent = `
-    
-    My interest and passion in the first view in web developer were of the visual of the page the process to build it.
-    My first step to learn was in platforms like Free Code Camp that I could practice.
-    I got certified as a front-end developer by Udacity. I learned skills to build a web page using HTML, CSS, and Javascript
-    and I am stil learning java script by ReDI School and learning VUE framework by myself`
-
+    const infoAboutMe = document.getElementById('infoAboutMe'); 
 
     infoAboutMe.className = 'textAboutMe';
     textContainer.appendChild(infoAboutMe);
@@ -236,30 +229,22 @@ function createContactSection() {
 
     const linkEmail =  document.createElement('a');
     linkEmail.href = 'mailto:ariane.crestani@gmail.com'
+    linkEmail.className ="fas fa-envelope"
+    linkEmail.id = 'medias';
     contactSection.appendChild(linkEmail);
 
-    const midiaEmailImg =  document.createElement('img');
-    midiaEmailImg.src = 'images/email.jpg';
-    midiaEmailImg.className = 'medias';
-    linkEmail.appendChild(midiaEmailImg);
     
     const linkLinkdin =  document.createElement('a');
+    linkLinkdin.className = 'fab fa-linkedin'
+    linkLinkdin.id = 'medias';
     linkLinkdin.href = 'https://www.linkedin.com/in/ariane-crestani-14910ba4/';
     contactSection.appendChild(linkLinkdin);
 
-    const imgLinkdin = document.createElement('img');
-    imgLinkdin.src = 'images/linkedin.jpg';
-    imgLinkdin.className = 'medias';
-    linkLinkdin.appendChild(imgLinkdin);
-
     const linkGithub =  document.createElement('a');
     linkGithub.href = 'https://github.com/arianecrestani'
+    linkGithub.className ="fab fa-github"
+    linkGithub.id = 'medias'
     contactSection.appendChild(linkGithub);
-
-    const imgGithub = document.createElement('img');
-    imgGithub.src = 'images/github.jpg'
-    imgGithub.className = 'medias';
-    linkGithub.appendChild(imgGithub);
 
     createMenuItem('#contact', 'contact');
     

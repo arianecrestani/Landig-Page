@@ -3,10 +3,11 @@
   gap: 40px;
   height: auto;
   align-items: center;
-  background-color: white;
+  background-color:white;
+
   box-shadow: rgb(156 148 148) 4px 3px 14px 0px;
   border-radius: 0.5rem;
-  width: 90%;
+  width:88em;
   /* max-width: 1400px; */
   max-width: 1400rem;
   margin-top: 5rem;
@@ -15,10 +16,14 @@
   margin-right: auto;
 }
 .textContainer {
-  font-size: 18px;
+  
   padding-left: 12rem;
   color: #606060;
   text-align: justify;
+  padding: 2rem;
+  font-size: 1.6rem;
+  display: contents;
+  
 }
 .title {
   font-size: 40px;

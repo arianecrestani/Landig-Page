@@ -1,5 +1,5 @@
 .header {
-  background-color: rosybrown;
+  background-color: white;
   font-size: 25px;
   text-transform: uppercase;
   padding: 1rem;
@@ -11,11 +11,11 @@
 
 .menuSection {
   text-decoration: none;
-  color: beige;
+  color:#606060;
   padding: 1rem;
 }
 
 .menuSection:hover {
-  background-color: beige;
-  color: rosybrown;
+  background-color: 
+ 
 }
