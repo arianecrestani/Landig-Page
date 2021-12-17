@@ -25,6 +25,8 @@
   margin: auto;
   display: grid;
   border-radius: 10px;
+  overflow: hidden;
+
   
 }
 
@@ -33,10 +35,14 @@
   border-radius: 10px;
   object-fit: cover;
   height: 350px;
+  transition: all 0.5s linear;
+  filter: drop-shadow(2px 4px 6px black);
  
 }
 
 .imagesFormat:hover  {
-  transform: scale(1.5);
+  transform: scale(1.2);
+  filter: contrast(0.7);
+
  
 }

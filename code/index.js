@@ -137,7 +137,6 @@ function createProjectSection() {
 
     const linkBlog =  document.createElement('a');
     linkBlog.href = 'https://arianecrestani.github.io/Travel-blog/'
-    linkBlog.textContent = 'Travel Blog';
     linkBlog.className = 'links';
     blogSection.appendChild(linkBlog);
 
@@ -153,7 +152,6 @@ function createProjectSection() {
 
     const linkToDo =  document.createElement('a');
     linkToDo.href = 'https://arianecrestani.github.io/To-do-list/'
-    linkToDo.textContent = 'To Do';
     linkToDo.className = 'links';
     toDoSection.appendChild(linkToDo);
 
@@ -168,7 +166,6 @@ function createProjectSection() {
 
     const linkMovieDb =  document.createElement('a');
     linkMovieDb.href = 'https://arianecrestani.github.io/Movie-Preview/'
-    linkMovieDb.textContent = 'Movie';
     linkMovieDb.className = 'links';
     movieDbSection.appendChild(linkMovieDb);
 
@@ -183,7 +180,6 @@ function createProjectSection() {
 
     const forescastAppLink =  document.createElement('a');
     forescastAppLink.href = 'https://github.com/arianecrestani/Project-weather'
-    forescastAppLink.textContent = 'ForecastApp';
     forescastAppLink.className = 'links';
     forescastAppSection.appendChild(forescastAppLink);
 
@@ -198,7 +194,6 @@ function createProjectSection() {
 
     const sentimentAppLink =  document.createElement('a');
     sentimentAppLink.href = 'https://github.com/arianecrestani/Evaluate-a-News-Article-with-Natural-Language-Processing'
-    sentimentAppLink.textContent = 'Sntiment Analysis';
     sentimentAppLink.className = 'links';
     sentimentSection.appendChild(sentimentAppLink);
 
