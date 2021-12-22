@@ -100,14 +100,19 @@ function createAboutMeSection() {
     textContainer.appendChild(mainTitleAboutMe);
 
     const infoAboutMe = document.getElementById('infoAboutMe'); 
-
     infoAboutMe.className = 'textAboutMe';
     textContainer.appendChild(infoAboutMe);
+
+    const icon = document.getElementById('icons')
+    aboutSection.appendChild(icon)
+    icon.id='icons'
 
     const avatarImg = document.createElement('img');
     avatarImg.className = 'avatarImg';
     avatarImg.src ="images/fotoperfil.jpg";
     aboutSection.appendChild(avatarImg);
+
+
     
 
     createMenuItem('#aboutMe', 'About Me');

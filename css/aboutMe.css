@@ -7,7 +7,8 @@
 
   box-shadow: rgb(156 148 148) 4px 3px 14px 0px;
   border-radius: 0.5rem;
-  width:88em;
+  border: solid 3px black;
+  width:80em;
   /* max-width: 1400px; */
   max-width: 1400rem;
   margin-top: 5rem;
@@ -39,4 +40,12 @@
   width: 200px;
   height: 200px;
   padding: 70px;
+}
+#icons {
+  display: grid;
+  gap: 6px;
+  margin-left: 3rem;
+
+
+
 }
