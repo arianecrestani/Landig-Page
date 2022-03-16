@@ -60,18 +60,14 @@ function createHomeSection() {
     homeSection.id = 'home';
     section.appendChild(homeSection);
 
-    const homeImg = document.createElement('img');
-    homeImg.src = "images/main3.jpg";
-    homeImg.id ='imgHome';
+    const homeImg = document.querySelector('video');
     homeSection.appendChild(homeImg);
 
     const homeTitle = document.createElement('div');
     homeTitle.className = 'homeTitle';
     homeSection.appendChild(homeTitle);
 
-    const titleImage = document.createElement('h1');
-    titleImage.textContent= 'Ariane Crestani  Portfolio'
-    titleImage.className = 'titleMeName'
+    const titleImage = document.getElementById('titleMeName');
     homeTitle.appendChild(titleImage);
 
     createMenuItem('#home', 'Home');

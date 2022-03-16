@@ -12,7 +12,7 @@
   -webkit-box-align: center;
   align-items: center;
   position: absolute;
-  top: 40%;
+  top:50%;
   text-align: center;
   width: 100%;
   position: absolute;
@@ -20,11 +20,33 @@
  
 }
 
-.titleMeName {
-  color: #606060;
-  font-family: ;
-  font-size: 4.5rem;
+#titleMeName span {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 3.2vh;
+  color:#606060;;
   font-weight: normal;
   left: 50%;
+  
+  /* transform: translate(-10%, -10%); */
+  text-transform: uppercase;
+  animation: animate 0.8s ease-in-out infinite;
+  animation-delay: calc(0.07s * var(--i));
 
 }
+@keyframes animate {
+
+   0%{
+     transform: translateY(0px)
+   }
+   20%{
+     transform: translateY(-20%);
+   }
+   40%,100%{
+     transform: translateY(0px);
+   }
+ 
+ }
+
+
