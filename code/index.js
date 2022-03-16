@@ -216,6 +216,20 @@ function createProjectSection() {
     imgSentiment.className = 'imagesFormat';
     sentimentAppLink.appendChild(imgSentiment)
 
+    const menuSection = document.createElement('div');
+    menuSection.className = 'section';
+    projectSection.appendChild(menuSection);
+
+
+    const menuAppLink =  document.createElement('a');
+    menuAppLink.href = 'https://github.com/arianecrestani/Project-weather'
+    menuAppLink.className = 'links';
+    menuSection.appendChild(menuAppLink);
+
+    const imgMenu = document.createElement('img');
+    imgMenu.src = 'images/menu.png';
+    imgMenu.className = 'imagesFormat';
+    menuAppLink.appendChild(imgMenu)
 
     
     createMenuItem('#project', 'project');
