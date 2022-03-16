@@ -222,7 +222,7 @@ function createProjectSection() {
 
 
     const menuAppLink =  document.createElement('a');
-    menuAppLink.href = 'https://github.com/arianecrestani/Project-weather'
+    menuAppLink.href = 'https://github.com/arianecrestani/Menu-restaurant'
     menuAppLink.className = 'links';
     menuSection.appendChild(menuAppLink);
 
@@ -230,6 +230,22 @@ function createProjectSection() {
     imgMenu.src = 'images/menu.png';
     imgMenu.className = 'imagesFormat';
     menuAppLink.appendChild(imgMenu)
+
+    const travelAppSection = document.createElement('div');
+    travelAppSection.className = 'section';
+    projectSection.appendChild(travelAppSection);
+
+
+    const travelAppLink =  document.createElement('a');
+    travelAppLink.href = 'https://github.com/arianecrestani/Travel-App'
+    travelAppLink.className = 'links';
+    travelAppSection.appendChild(travelAppLink);
+
+    const imgTravelApp = document.createElement('img');
+    imgTravelApp.src = 'images/travelApp.jpg';
+    imgTravelApp.className = 'imagesFormat';
+    travelAppLink.appendChild(imgTravelApp)
+
 
     
     createMenuItem('#project', 'project');
