@@ -1,6 +1,7 @@
 
-# LandigPage 
+## Portfolio - LandingPage
 
+This is the second project by the Udacity course. the requirements are below 
 
 ## Description
 This project was made independently and without any starter code. It is made with HTML, CSS and JavaScript, following a series of lectures on the theme “JavaScript & the DOM”.
@@ -8,7 +9,7 @@ This project was made independently and without any starter code. It is made wit
 ## General info
 The project was required to have an interactive menu navigation using java script.
 
-## Features
+## Features 
 
 * Responsive navigation
 * Section Active State - It should be clear which section is being viewed while scrolling through the page.
@@ -16,11 +17,8 @@ The project was required to have an interactive menu navigation using java scrip
 * The UI was criated using Java-script in ordend to be dynamic 
 
 
-
-<img src = "images/main2.jpg">
-
 ## Inspiration
 Criated portfolio about me. 
 
 ### Link this page
- https://arianecrestani.github.io/Landig-Page/
+ https://arianecrestani.github.io/Portfolio-Ariane/
