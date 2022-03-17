@@ -1,5 +1,5 @@
 
-# LandigPage, My Portfolio
+# Portfolio - Landingpage
 
 This is the second project by the Udacity course. the requirements are below 
 
