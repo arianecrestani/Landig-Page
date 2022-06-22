@@ -3,8 +3,12 @@
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  background-color:
-  #DACAC4 ;
+  background-color: #dacac4;
+  max-width: 1400rem;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
@@ -12,7 +16,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
 }
 
 .links {
@@ -26,23 +29,18 @@
   display: grid;
   border-radius: 10px;
   overflow: hidden;
-
-  
 }
 
-.imagesFormat  {
+.imagesFormat {
   width: 350px;
   border-radius: 10px;
   object-fit: cover;
   height: 350px;
   transition: all 0.9s linear;
   filter: drop-shadow(2px 4px 6px black);
- 
 }
 
-.imagesFormat:hover  {
+.imagesFormat:hover {
   transform: scale(1.2);
   filter: contrast(0.7);
-
 }
-
